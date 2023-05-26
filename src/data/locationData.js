@@ -1,4 +1,4 @@
-export const states = [
+export const state = [
     "Alabama",
     "Alaska",
     "American Samoa",
@@ -60,7 +60,7 @@ export const states = [
     "Wyoming",
   ];
   
-  export const departments = [
+  export const department = [
     "Sales", 
     "Marketing", 
     "Engineering", 

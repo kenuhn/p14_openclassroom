@@ -4,6 +4,7 @@ import ReactPaginate from "react-paginate";
 import { useSelector } from "react-redux";
 const Tables = () => {
   const data = useSelector((state) => state.EmployeeData);
+  console.log(data)
   const [sortedColumn, setSortedColumn] = useState(null);
   const columns = useMemo(
     () => [
@@ -174,82 +175,6 @@ const Tables = () => {
       </div>
     </>
   );
-
- /*  const {
-    getTableProps,
-    getTableBodyProps,
-    headerGroups,
-    rows,
-    prepareRow,
-    state,
-    setGlobalFilter,
-    gotoPage,
-    pageCount,
-  } = useTable({ columns, data }, useGlobalFilter, usePagination);
-
-  const { globalFilter } = state;
-  const handlePageChange = ({ selected }) => {
-    gotoPage(selected);
-  };
-  return (
-    <div>
-      <input
-        type="text"
-        value={globalFilter || ""}
-        onChange={(e) => setGlobalFilter(e.target.value)}
-        placeholder="Search Employees..."
-      />
-
-      <table {...getTableProps()} className="table">
-        <thead>
-          {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps()}>{column.render("Header")}</th>
-              ))}
-            </tr>
-          ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
-          {rows.map((row) => {
-            prepareRow(row);
-            return (
-              <tr {...row.getRowProps()}>
-                {row.cells.map((cell) => (
-                  <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                ))}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-      <ReactPaginate
-        previousLabel="Previous"
-        nextLabel="Next"
-        breakLabel="..."
-        breakClassName="break-me"
-        pageCount={pageCount}
-        marginPagesDisplayed={2}
-        pageRangeDisplayed={5}
-        onPageChange={handlePageChange}
-        containerClassName="pagination"
-        activeClassName="active"
-      />
-      <div>
-        <input
-          type="number"
-          min={1}
-          max={pageCount}
-          value={pageNumber + 1}
-          onChange={(e) => {
-            const page = e.target.value ? Number(e.target.value) - 1 : 0;
-            setPageNumber(page);
-          }}
-        />
-        <button onClick={() => gotoPage(pageNumber)}>Go</button>
-      </div>
-    </div>
-  );*/
 } ;
 
 export default Tables;

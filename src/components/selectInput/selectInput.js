@@ -1,9 +1,9 @@
 import React from 'react';
 
 const SelectInput = (props) => {
-    const { states, departements, register, ...restProps } = props;
-    const name = props.states ? "states" : "departements"
-    const options = (states ?? departements)?.map((value) => (
+    const { state, department, register, ...restProps } = props;
+    const name = props.state ? "state" : "department"
+    const options = (state ?? department)?.map((value) => (
       <option key={value} value={value}>
         {value}
       </option>

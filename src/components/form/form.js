@@ -8,10 +8,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useDispatch } from "react-redux";
 import addEmployeeAction from "../../redux/Actions/addEmployeeActions";
 import EmployeeData from "../../data/EmployeeData";
-/* import SelectInput from "../selectInput/selectInput"; */
-import { states, departments } from "../../data/locationData";
-import Modal from '../../components/modal/modal'
-import SelectInput from 'pacquet_select'
+import { state, department } from "../../data/locationData";
+import {Modal} from '@kenuhn/modal_form';
+import SelectInput from '../selectInput/selectInput' 
 
 
 const schema = Yup.object().shape({
@@ -47,11 +46,9 @@ function Form() {
    *
    * @param {Object} data - Données du formulaire soumises
    */
-   const navigate = useNavigate();
-  const onSubmit = (data) => {
-    console.log(EmployeeData);
-    dispatch(addEmployeeAction(data, EmployeeData));
-    setIsOpen(true)
+   const onSubmit = (data) => {
+   dispatch(addEmployeeAction(data, EmployeeData));
+   setIsOpen(true)
    
   };
 
@@ -143,7 +140,7 @@ function Form() {
         <div>
           <label htmlFor="state">State</label>
           <SelectInput
-            states={states}
+            state={state}
             register={register}
            
           />
@@ -157,9 +154,9 @@ function Form() {
       </div>
 
       <div>
-        <label htmlFor="departement">Departements</label>
+        <label htmlFor="department">Departements</label>
         <SelectInput
-            departements={departments}
+            department={department}
             register={register}
           />
         {errors.email && <p className="error">{errors.email.message}</p>}

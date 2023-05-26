@@ -14,9 +14,6 @@ const Modal = (props) => {
                     <p className=''> Nouvelle utilisateur crée !! </p>
                     <button className="modal-button" onClick={ () => { navigate('./Employe')}}> ok </button>
                 </div>
-
-                
-                
             </div>
        
     );
