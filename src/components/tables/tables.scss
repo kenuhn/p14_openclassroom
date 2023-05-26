@@ -1,0 +1,36 @@
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+   .my-table  th.sorted {
+    background-color: gray;
+  }
+  .my-table thead th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    font-weight: bold;
+  }
+  
+  .my-table tbody td {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .my-table tbody tr:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+

@@ -1,0 +1,8 @@
+import addEmployeeReducer from "./Reducer/addEmployeeReducer"
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk';
+const store = createStore(addEmployeeReducer, applyMiddleware(thunk))
+
+export default store 
+
+
