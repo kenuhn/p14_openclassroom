@@ -1,6 +1,11 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Le projet de formulaire avec consultation de tableaux d'employés est une application qui permet aux utilisateurs de se connecter à un système et d'accéder à des tableaux d'employés. 
+
+pour accéder aux paquets npm : https://www.npmjs.com/package/@kenuhn/modal_form
+
+pour accéder au github du paquet: https://github.com/kenuhn/modal_form
+
 
 ## Available Scripts
 
