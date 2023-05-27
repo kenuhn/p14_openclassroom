@@ -163,7 +163,7 @@ function Form() {
       </div>
 
    
-      <input type="submit" />
+      <input className="submit_button" type="submit" />
     </form>
     {isOpen ? <Modal isOpen={isOpen} /> : <Modal isOpen={isOpen}/> }
     </div> 
