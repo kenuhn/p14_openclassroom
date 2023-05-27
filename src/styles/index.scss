@@ -2,3 +2,12 @@
 @import '../components/tables/tables.scss';
 @import '../components/form/form.scss';
 @import '../components/modal/modal.scss';
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  body{
+    margin: 0;
+    min-height: 800px;
+  }

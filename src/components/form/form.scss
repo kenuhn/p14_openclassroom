@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height:1000px;
+    background: linear-gradient(109.6deg,#7f9a14 11.2%,#47560b 91.7%);
   }
   
   .form {
@@ -11,6 +12,7 @@
     background-color: #f2f2f2;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
   }
   
   .form-control {

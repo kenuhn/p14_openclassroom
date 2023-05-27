@@ -94,7 +94,7 @@ const Tables = () => {
 
 
   return (
-    <>
+    <div className="table_content">
       <input
         className="search-bar"
         type="text"
@@ -134,7 +134,7 @@ const Tables = () => {
         </tbody>
       </table>
 
-      <div>
+      <div className="button_content">
         <button onClick={() => previousPage()} disabled={!canPreviousPage}>
           Précédent
         </button>
@@ -173,7 +173,7 @@ const Tables = () => {
           ))}
         </select>
       </div>
-    </>
+    </div>
   );
 } ;
 

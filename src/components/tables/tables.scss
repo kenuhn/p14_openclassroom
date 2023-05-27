@@ -1,3 +1,10 @@
+.table_content{
+ padding-left: 40px;
+ padding-right: 40px;
+}
+
+
+
 .my-table {
     width: 100%;
     border-collapse: collapse;
@@ -23,14 +30,63 @@
   }
 
   .search-bar {
+     margin-top: 50px ;
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
     background-color: #f2f2f2;
     border-radius: 5px;
-    overflow: hidden;
+    overflow: hidden; 
+  }
+
+  .button_content button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    background-color: #7f9a14 ;
+    color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button_content button:hover{
+    background-color: #47560b;
   }
   
 
+
+.button_content select {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: #333;
+  appearance: none;
+  margin-right: 10px;
+}
+
+.button_content select:focus {
+  outline: none;
+}
+
+ .custom-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #666 transparent transparent transparent;
+} 
+strong {
+  margin-right: 10px;
+}
